@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!--© Copyright Alan da Cruz Assis da Silva; Dra. Luciana Ferreira da Silva e Dra. Tatiana Ribeiro Maciel-->
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	
+	
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-53MZEDFE95');
+</script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">	
+
+<link rel="shortcut icon" href="#" >
+
+	<title>GET</title>
+	<style>
+		* {
+    margin: 0;
+    padding: 0;
+	}
+	html{height:10%;}
+	
+	body{
+	height:100%;
+	}
+	
+	body{
+	
+	}
+		
+		h1 {
+			display: block;
+			font-family: 'Montserrat','Roboto', Arial;
+			font-size: 300%;
+			color: #01963D;
+			position: absolute;
+			left: 172px;
+			top: 35px;
+			padding: ;
+			margin-top: ;
+			letter-spacing: 1px;
+			font-weight: bold;
+			width: 800px;
+			margin-right:1px;
+			margin:0;
+			padding:0;
+			}
+		
+		h2 {
+			font-family: 'Open Sans Condensed',Helvetica;
+			font-size: 150%;
+			color: #01963D;
+			position: absolute;
+			left:172px;
+			top: 96px;
+			}
+		
+		p {
+			font-family: Arial;
+			font-size: 15pt;
+			color: black;
+			position:relative;
+			left:11px;
+			margin-bottom:0;
+		}
+		fieldset {
+			font-family: Arial;
+			font-size: 16pt;
+			color: #166D00;
+			position:relative;
+			left:11px;
+			width: 250px;
+			top: 105px;
+			border: 2px solid #0066B3;
+			padding-bottom: 0px;
+			margin-top: 1px;
+			border-radius: 10px;
+			background-color: white;
+			height: 690px;
+		}
+		img{
+			position: absolute;
+			top:15px;
+			left: 35px;
+			margin: 0px;
+			margin-top:0px;
+			padding: 0px;
+		}
+		
+		body{
+		background-color: #FAFAFA
+		}
+			
+				
+		
+		
+			
+		
+		p#copyright{
+		font: normal 15pt Arial;
+		color:white;
+		text-align:center;
+		}
+		
+		
+		
+		p#pri{
+		width: 100%;
+		font-size:22pt;
+		color: #166D00;
+		
+		}
+		p#pri2{
+		width: 100%;
+		font-size:22pt;
+		color: #166D00;
+		
+		}
+		p#pri3{
+		width: 100%;
+		font-size:22pt;
+		color: #166D00;
+		
+		}
+		p#pri4{
+		width: 100%;
+		font-size:22pt;
+		color: #166D00;
+		
+		}
+		p#pri5{
+		width: 100%;
+		font-size:22pt;
+		color: #166D00;
+		
+		}
+		p#pri6{
+		width: 100%;
+		font-size:22pt;
+		color: #166D00;
+		
+		
+		}
+		
+		input#cVolp{
+		width: 70%;
+		height:50px;
+		font-size: 30px;
+		
+		border-radius: 5px;
+		margin-bottom: 15px;
+		margin-top: 2px;
+		}
+		input#cConcp{
+		width: 70%;
+		height:50px;
+		font-size: 30px;
+		
+		border-radius: 5px;
+		margin-top: 2px;
+		}
+		input#cVold{
+		width: 70%;
+		height:50px;
+		font-size: 30px;
+		background-color: #d9d9d9;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		margin-top: 2px;
+		}
+		input#cConcd{
+		width: 70%;
+		height:50px;
+		font-size: 30px;
+		
+		border-radius: 5px;
+		margin-top: 2px;
+		}
+		input#cVola{
+		width: 70%;
+		height:50px;
+		font-size: 30px;
+		
+		border-radius: 5px;
+		margin-bottom: 15px;
+		margin-top: 2px;
+		}
+		input#cConca{
+		width: 70%;
+		height:50px;
+		font-size: 30px;
+		
+		border-radius: 5px;
+		margin-top: 2px;
+		}
+		
+		p#obs{
+		color: #3d3a3a;
+		}
+		
+		a{
+		text-decoration: none;
+		font-size: 16px;
+		color:  #01963D;
+		background-color: white;
+		padding: 19px 27px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #01963D;
+		border-radius: 29px;
+		margin-right: 15px;
+		cursor: pointer;
+		box-shadow: 0.5px 0.5px 0.5px 0.5px violet;
+		}
+		
+		
+		
+	
+	
+	.cabecalho{
+	top: 0px;
+	width: 100%;
+	left: 0px;
+	background-color: #ffffff;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 150px;
+	min-height:149px;
+	display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin-top: 0px;
+		margin-bottom: 5px;
+		box-shadow: 0px 3px 2px #888888;
+	}
+	
+	.flex-box {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		 background-color: #01963D;
+		 width: 100%;
+		 height: 100%;
+		}
+	
+		
+	.form{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	width: 40%;
+	height: 100%;
+	float: left;
+	padding: 0px;
+	top: 0px;
+	margin-top: 0px;
+	}
+	
+	
+	
+	#div{
+	position: relative;
+	display: flex;
+	float: right;
+	align-items: center;
+	width: 55%;
+	height: 95%;
+	min-width: 500px;
+	margin-top: 0px;	
+	top: 0px;
+	}
+	
+	textarea#textarea{
+		
+		
+		line-height:0.5;
+		width: 90%;
+		height: 90%;
+		font: normal 20pt Arial;
+		color: #166D00;
+		border-radius: 5px;
+		line-height: 1.2em;
+		text-shadow: 0.5px 0.5px 0.5px black;
+		padding-left: 25px;
+		}
+		
+		input#caixai{
+		display: none;
+		text-align:center;
+		top:40px;
+		width: 1%;
+		height:4px;
+		font: normal 11pt Arial
+		}
+		
+		.fieldset{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: white;
+		width: 100%;
+		margin-left:0px;
+		height: 750px;
+		padding: 5px;
+		box-sizing: border-box;
+		margin: 0px:
+		border-radius: 25px;
+		top:0px;
+		
+		}
+		
+		#flexform{
+		position: relative;
+		display: flex;
+		  align-items: center;
+		  justify-content: center;
+		 background-color: #FAFAFA;
+		 width: 100%;
+		 height:720px;
+		 
+		}
+		
+		#fCalculo{
+		position: relative;
+		margin-top: 0px;
+		padding: 0px;
+		top: -20px;
+		width: 90%;
+		height: 90%;
+		}
+		
+		fieldset{
+		top: 35px;
+		padding: 18px;
+		margin-bottom: 10px;
+		margin-left: 0px;
+		margin-right: 0px;
+		width: calc(100% - 40px);
+		min-width: 250px;
+		left: 0px;
+		border-color: #01963D;
+		color:166D00;
+		}
+		
+		footer{
+			font-family: Arial;
+			font-size: 15pt;
+			font-weight: bold;
+			color: white;
+			text-shadow: 0.5px 0.5px 0px gray;
+			width:100%;
+			left: 0px;
+			min-width: 100%;
+			background-color: #01963D;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			text-align: center;
+			margin: 0;
+			border: 0;
+			}
+		
+		
+			
+		
+		#lastupdated{
+		font-family: Consolas, arial;
+		color: gray;
+		width: 80%;
+		font-size: 0.8em;
+		font-style: italic;
+		left: 4%;
+		opacity: 50%
+		}
+		
+		#obs{
+		margin-left: 10px;
+		}
+		
+		#links{
+		margin-left: 4%;
+		width: 80%;
+		}
+		
+		legend{
+		text-shadow: 0.5px 0.5px 0.5px black;
+		}
+		
+		input:placeholder-shown {
+		border-color: #f1f1f1;
+		border: inset;
+		}
+		
+		input:not(:placeholder-shown) {
+		border-color: green;
+		}
+		
+				
+		input.dia{
+		width: 70px;
+		height: 40px;
+		text-align: center;
+		margin-top: 10px;
+		font-size: 18pt;
+		margin-bottom: 15px;
+		border-radius: 5px;
+		}
+		
+		input.mes{
+		width: 70px;
+		height: 40px;
+		text-align: center;
+		margin-top: 10px;
+		font-size: 18pt;
+		margin-bottom: 15px;
+		border-radius: 5px;
+		}
+		
+		input.ano{
+		width: 120px;
+		height: 40px;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		font-size: 18pt;
+		border-radius: 5px;
+		}
+		
+		#input1ign{
+		width: 90px;
+		height: 40px;
+		text-align: center;
+		margin-top: 10px;
+		font-size: 18pt;
+		margin-bottom: 15px;
+		}
+		
+			
+		#autoria{
+		text-align: justify;
+		color: gray;
+		display: block;
+		width: 90%;
+		font-family: Consolas, arial;
+		font-size: 12px;
+		left: 10px;
+		margin-left: 4%;
+		}
+		
+		#texto{
+		text-align: justify;
+		width: 90%;
+		margin-left: 4%;
+		}
+		
+		
+				
+		.description{
+		font-size:8pt;
+		}
+		
+		
+		#btnLerMais{
+		font-size:22px;
+		cursor: pointer;
+		color: green;
+		font-weight: bold;
+		background-color: transparent;
+		border: none;
+		padding-right: 3px;
+		padding-left: 3px;
+		}
+		
+		#btnLerMais2{
+		font-size:22px;
+		cursor: pointer;
+		color: green;
+		font-weight: bold;
+		background-color: transparent;
+		border: none;
+		padding-right: 3px;
+		padding-left: 3px;
+		}
+		
+		#maisTexto{
+		display: none;
+		}
+		
+		#maisTexto2{
+		display: none;
+		}
+		
+		.site{
+		display: flex;
+		flex-direction: column;
+		min-height:100vh;
+		}
+		
+		.site-content{
+		flex-grow:1;
+		}
+		
+		.form-check-input:checked{
+		background-color: #01963D;
+		border-color: #01963D;
+		}
+		
+		.form-select-lg{
+		padding-right: 1.0rem;
+		font-size: 1.2rem;
+		}
+		
+		input#flexSwitchCheckDefault{
+		input:placeholder-shown {
+		border: inset;}
+		}
+		
+		<!--media-->
+		@media (min-width: 600px){
+		
+		body{background-color:black;}
+		
+		#flexform{
+		height: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		}
+		
+		.form{
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+		}
+		
+		fieldset{
+		padding: 10px;
+		max-width: 400px;
+		min-width: 312px;
+		color:166D00;
+		}
+		
+		#fCalculo{
+		margin-top: 0px;
+		padding: 0px;
+		}
+		} <!--/media-->
+		
+		
+	</style>
+	
+	
+	
+</head>
+<body class="site">
+
+<script>
+window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos fins QUE leu e concorda com os TERMOS E CONDIÇÕES DE USO (disponíveis em alancruzassis.wixsite.com/neodate), QUE atende aos pré-requisitos neles dispostos, QUE cumprirá os termos neles acordados e QUE aceita os cookies deste site. Caso você não concorde (ou não puder cumprir) com os acordos você deve sair da página e não poderá ter acesso ao conteúdo.")
+</script>
+<div class="cabecalho">
+<div>
+	<hgroup>
+	<div>
+	<h1 id="h1">GASTO ENERGÉTICO</h1> 
+	</div>
+	<div>
+	<h2>GEB e GET de Pacientes Adultos e Idosos não críticos</h2>
+	</div>
+	</hgroup>
+	<img src="get.png"
+	alt="Logotipo"
+	width="120px">
+</div>
+</div>	
+<div class="site-content">
+<div class="bg2">
+<div class="flex-box container-box" id="flexform">
+<div class="form">
+
+		<form method="get" id="fCalculo" action="none" oninput="resultado()"  onchange="resultado()" onclick="resultado()">
+			
+			<fieldset ><legend ><strong></strong></legend>
+			<p id="pri"><label for="input1da"><b>Idade</b></label>
+			<input class="ano" id="input1da" type="number"  maxlength="4" max="300" placeholder="Anos" onkeyup="PressEnter('flexSwitchCheckDefault');"></input> 
+			
+			<p id="pri"><label><b>Sexo</b></label>
+			<div class="form-check form-switch">
+			  <input name="sexo" class="form-check-input" type="radio" value="0" id="flexSwitchCheckDefault" onkeyup="PressEnter('flexSwitchCheckDefault2');">
+			  <label class="form-check-label" for="flexSwitchCheckDefault">Feminino</label>
+			</div>
+			<div class="form-check form-switch">
+			  <input name="sexo" class="form-check-input" type="radio" value="1" id="flexSwitchCheckDefault2" onkeyup="PressEnter('input3da');">
+			  <label class="form-check-label" for="flexSwitchCheckDefault2">Masculino</label>
+			</div>			
+			
+			<p id="pri"><label for="input3da"><b>Peso</b></label>
+			<input id="input3da" class="ano" type="number"  maxlength="4" placeholder="kg" onkeyup="PressEnter('input4da');"></input></p>
+			
+			<p id="pri"><label for="input4da"><b>Altura</b></label>
+			<input id="input4da" class="ano" type="number"  maxlength="4" placeholder="cm" onkeyup="PressEnter('input5da');"></input></p>
+						
+			<p id="pri"><label for="input5da"><b>Fator Atividade</b></label></br>
+			<input id="input5da" class="ano" type="number"  maxlength="4" placeholder="1.3" onkeyup="PressEnter('input8da');"></input></p>
+			
+			<p id="pri"><label for="input8da"><b>Fator Injúria</b></label></br>
+			<input id="input8da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" onkeyup="PressEnter('input6da');"></input></p>
+			
+			<p id="pri"><label for="input6da"><b>Fator Térmico</b></label></br>
+			<input id="input6da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" ></input></p>
+			
+			</fieldset>
+							
+		</form>
+		
+</div>		
+		<input type="text" name="caixan" id="caixai" value="<<PREENCHA OS CAMPOS AO LADO" readonly />
+		
+	<div id="div">
+	<div class="flex-box">
+	<textarea id="textarea"  readonly >← PREENCHA OS CAMPOS</textarea>
+	</div>
+	</div>
+</div>	
+	
+	
+	<script>
+		function resultado() {
+		//SELEÇÃO
+		let inputIdade = document.getElementById('input1da');
+		let inputSexoF = document.getElementById('flexSwitchCheckDefault');
+		let inputSexoM = document.getElementById('flexSwitchCheckDefault2');
+		let inputPeso = document.getElementById('input3da');
+		let inputAltura = document.getElementById('input4da');
+		let inputFA = document.getElementById('input5da');
+		let inputFI = document.getElementById('input8da');
+		let inputFT = document.getElementById('input6da');
+				
+		//ATRIBUIÇÃO DE VALOR
+		inputIdade = inputIdade.value; 
+		inputSexoF = inputSexoF.value; 
+		inputSexoM = inputSexoM.value; 
+		inputPeso = inputPeso.value; 
+		inputAltura = inputAltura.value;
+		inputFA = inputFA.value; 
+		inputFI = inputFI.value;
+		inputFT = inputFT.value;
+		
+		inputSexoFc = document.getElementById('flexSwitchCheckDefault');
+		inputSexoMc = document.getElementById('flexSwitchCheckDefault2');
+		
+		//MATH AREA
+		//Harris-Benedict
+		let hbf = parseFloat((655.095+(9.5634*inputPeso)+((1.8496*inputAltura)-(4.6756*inputIdade))).toFixed(2)); 
+		let hbm = parseFloat((66.473+(13.7516*inputPeso)+((5.0033*inputAltura)-(6.755*inputIdade))).toFixed(2));			
+			hbf = parseFloat((hbf*inputFA*inputFI*inputFT).toFixed(2));
+			hbm = parseFloat((hbm*inputFA*inputFI*inputFT).toFixed(2));
+			
+			hbfkcalkg = parseFloat(hbf/inputPeso).toFixed(1);
+			hbmkcalkg = parseFloat(hbm/inputPeso).toFixed(1);
+		//F
+		
+		//Mifflin
+		let mff = (10*inputPeso+6.25*inputAltura-5*inputIdade-161);
+		let mfm = (10*inputPeso+6.25*inputAltura-5*inputIdade);
+			mff = parseFloat((mff*inputFA*inputFI*inputFT).toFixed(2));
+			mfm = parseFloat((mfm*inputFA*inputFI*inputFT).toFixed(2));
+			mffkcalkg = parseFloat(mff/inputPeso).toFixed(1);
+			mfmkcalkg = parseFloat(mfm/inputPeso).toFixed(1);
+		
+		//FAO/ONU/OMS 2001
+		
+		let faof = 0;
+		let faom = 0;
+		
+		if (inputIdade>60){
+		faof = (9.082*inputPeso+658.5);
+		faom = (11.711*inputPeso+587.7); 
+		faof = parseFloat((faof*inputFA*inputFI*inputFT).toFixed(2));
+		faom = parseFloat((faom*inputFA*inputFI*inputFT).toFixed(2));
+		
+		} else if (inputIdade>30){
+		faof = (8.126*inputPeso+845.6);
+		faom = (11.472*inputPeso+873.1); 
+		faof = parseFloat((faof*inputFA*inputFI*inputFT).toFixed(2));
+		faom = parseFloat((faom*inputFA*inputFI*inputFT).toFixed(2));
+		
+		}else if (inputIdade>=18){
+		faof = (14.818*inputPeso+486.6);
+		faom = (15.057*inputPeso+692.2); 
+		faof = parseFloat((faof*inputFA*inputFI*inputFT).toFixed(2));
+		faom = parseFloat((faom*inputFA*inputFI*inputFT).toFixed(2));
+		}
+		
+		faofkcalkg = parseFloat(faof/inputPeso).toFixed(1);
+		faomkcalkg = parseFloat(faom/inputPeso).toFixed(1);
+		
+		//IOM 2005
+		
+		let alturaMetros = inputAltura/100;
+		let imc = (inputPeso/alturaMetros**2);
+		
+		let iomf = (247-2.67*inputIdade+401.5*inputAltura/100+8.6*inputPeso);
+		let iomm = (293-3.8*inputIdade+456.4*inputAltura/100+10.12*inputPeso); //MASC
+		iomf = parseFloat((iomf*inputFA*inputFI*inputFT).toFixed(2));
+		iomm = parseFloat((iomm*inputFA*inputFI*inputFT).toFixed(2));
+		
+		
+		if (imc>=18.5&&imc<=40){
+		iomf=iomf;
+		iomm=iomm;
+		}else{
+		iomf= 'Não aplicável (IMC<18,5 ou >40)';
+		iomm='Não aplicável (IMC<18,5 ou >40)'
+		}
+		
+		let iomfkcalkg='';
+		let iommkcalkg='';
+		
+		if (iomf>0&&iomm>0){
+		iomfkcalkg = parseFloat(iomf/inputPeso).toFixed(1);
+		iommkcalkg = parseFloat(iomm/inputPeso).toFixed(1);
+		}
+		
+		//DISPLAY AREA
+		//Feminino
+		if (inputIdade>=18&&inputFT>=1&&inputFA>=1&&inputFI>=1&&inputAltura>2&&inputPeso>0&&inputSexoFc.checked){
+		var r = window.document.getElementById('caixai')//atribuição de local
+		var txtarea = window.document.getElementById('textarea')
+		textarea.value='GET (Harris-Benedict, 1919):\n'+hbf+' kcal ('+hbfkcalkg+' kcal/kg)\n\n'
+		+ 'GET (Mifflin-St Jeor, 1990):\n'+ mff + ' kcal ('+mffkcalkg+' kcal/kg)\n\n'+'GET (FAO/ONU/OMS, 2001):\n'+faof+' kcal ('+faofkcalkg+' kcal/kg)\n\n'+'GET (IOM, 2005):\n'+iomf+' kcal ('+iomfkcalkg+' kcal/kg)';
+		//Masculino
+		} else if (inputIdade>=18&&inputFT>=1&&inputFA>=1&&inputFI>=1&&inputAltura>2&&inputPeso>0&&inputSexoMc.checked){
+		var r = window.document.getElementById('caixai')//atribuição de local
+		var txtarea = window.document.getElementById('textarea')
+		textarea.value='GET (Harris-Benedict, 1919):\n'+hbm+' kcal ('+hbmkcalkg+' kcal/kg)\n\n'
+		+ 'GET (Mifflin-St Jeor, 1990):\n'+ mfm + ' kcal ('+mfmkcalkg+' kcal/kg)\n\n'+'GET (FAO/UNU/OMS, 2001):\n'+faom+' kcal ('+faomkcalkg+' kcal/kg)\n\n'+'GET (IOM, 2005):\n'+iomm+' kcal ('+iommkcalkg+' kcal/kg)';
+		
+		}else{
+		var r = window.document.getElementById('caixai')//atribuição de local
+		var txtarea = window.document.getElementById('textarea')
+		textarea.value=('← PREENCHA OS CAMPOS');
+		}//else
+		}//function
+	</script>
+	<script>
+	function lerMais(){ //Expandir/Retrair texto descrição dos autores
+	var maisTexto = document.getElementById('maisTexto');
+	var btnLerMais = document.getElementById("btnLerMais");
+	
+	if(maisTexto.style.display==="inline"){
+	maisTexto.style.display="none";
+	btnLerMais.innerHTML="&#9660;";
+	} else{
+	maisTexto.style.display="inline";
+	btnLerMais.innerHTML="&#9650;";
+	}
+	}
+	</script>
+	
+	<script>
+	function lerMais2(){ //Expandir/Retrair texto descrição dos autores
+	var maisTexto2 = document.getElementById('maisTexto2');
+	var btnLerMais2 = document.getElementById("btnLerMais2");
+	
+	if(maisTexto2.style.display==="inline"){
+	maisTexto2.style.display="none";
+	btnLerMais2.innerHTML="&#9660;";
+	} else{
+	maisTexto2.style.display="inline";
+	btnLerMais2.innerHTML="&#9650;";
+	}
+	}
+	</script>
+	
+	<script type="text/javascript">
+
+	function PressEnter(nextinputId){
+		if(event.keyCode == 13){
+			document.getElementById(nextinputId).focus();     
+			return false;           
+		}
+}
+</script>
+</br>
+</br>
+<button type="button"><img src="get.png" alt="Logotipo" width="120px"></button>
+</br>
+<p id="links"><span><a href="https://drive.google.com/file/d/1MXZj-PU5y6O-lZLt-WWa4-BCNMnQ7LUd/view?usp=sharing" target="_blank">Tabelas FA, FI, FT</a></span><span >
+</br>	
+</br>	
+</br>
+</br>
+<div id="autoria"><span class="names">AUTOR:</br></br><b>Alan da Cruz Assis da Silva¹</span></b>
+<button onclick="lerMais()" id="btnLerMais" >&#9660;</button>
+</br><span id="maisTexto"class="description">
+¹Estudante de Graduação em Nutrição, Departamento de Ciências da Vida - DCV, Universidade do Estado da Bahia – UNEB, Salvador, Bahia, Brasil.</br>
+ 
+</span>
+</br></br>
+</div></br>
+<div id="autoria"><span class="description">REFERÊNCIAS:</span></b>
+<button onclick="lerMais2()" id="btnLerMais2" >&#9660;</button>
+</br><span id="maisTexto2">
+ Cuppari L. Nutrição clínica no adulto 4a ed. (4th edição). Editora Manole; 2019.</br></br>
+ Food and Nutritional Technical Reports Series. Report of a joint FAO/WHO/UNU Expert Consul-tation. Human Energy Requirements. Energy requirements for adults. 2001. p. 35-52</br></br>
+ Harris J, Benedict FG. A biometric study of basal metabolism in man. Washington, DC: Carnigie Institution of Washington; 1919. Publication No. 279.</br></br>
+ Institute of Medicine/Food and Nutrition Board. Dietary reference intakes for energy, carbohydrate, fiber, fat, fatty acids, cholesterol, protein and aminoacids (macronutrients). Washington, DC: Na-tional Academy Press; 2005. p. 107-240.</br></br>
+ National Research Council. Recommended dietary allowances. 10. ed. Washington, DC: National Academy Press; 1989. 284p.
+ 
+
+</span></br></div>
+</br></br>
+
+<p id="lastupdated">Última atualização em: 01/02/2022</p>
+</br></br>
+</div>
+</div>
+
+<footer>
+	<div>
+	© Copyright 2022 - Todos os direitos reservados.
+	</div>
+</footer>
+	
+  
+</div>		
+
+			
+	
+</body>
+</html>
