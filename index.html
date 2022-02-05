@@ -391,7 +391,7 @@
 		border: inset;
 		}
 		
-		input:not(:placeholder-shown) {
+		input:not(:placeholder-shown;:#flexSwitchCheckDefault;:#flexSwitchCheckDefault1) {
 		border-color: green;
 		}
 		
@@ -496,6 +496,10 @@
 		min-height:100vh;
 		}
 		
+		.exclamation{
+		color: #f7f7f7;
+		}
+		
 		.site-content{
 		flex-grow:1;
 		}
@@ -577,11 +581,11 @@ window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos
 <div class="flex-box container-box" id="flexform">
 <div class="form">
 
-		<form method="get" id="fCalculo" action="none" oninput="resultado()"  onchange="resultado()" onclick="resultado()">
+		<form method="get" id="fCalculo" action="none" oninput="resultado()" onclick="exclamation()" onchange="exclamation()" oninput="exclamation()" onchange="resultado()" onclick="resultado()">
 			
 			<fieldset ><legend ><strong></strong></legend>
 			<p id="pri"><label for="input1da"><b>Idade</b></label>
-			<input class="ano" id="input1da" type="number"  maxlength="4" max="300" placeholder="Anos" onkeyup="PressEnter('flexSwitchCheckDefault');"></input> 
+			<input class="ano" id="input1da" type="number"  maxlength="4" max="300" placeholder="Anos" onkeyup="PressEnter('flexSwitchCheckDefault');"></input> <span class="exclamation" id="exclamationID"> !</span>
 			
 			<p id="pri"><label><b>Sexo</b></label>
 			<div class="form-check form-switch">
@@ -594,19 +598,19 @@ window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos
 			</div>			
 			
 			<p id="pri"><label for="input3da"><b>Peso</b></label>
-			<input id="input3da" class="ano" type="number"  maxlength="4" placeholder="kg" onkeyup="PressEnter('input4da');"></input></p>
+			<input id="input3da" class="ano" type="number"  maxlength="4" placeholder="kg" onkeyup="PressEnter('input4da');"></input><span class="exclamation" id="exclamationPE"> !</span></p>
 			
 			<p id="pri"><label for="input4da"><b>Altura</b></label>
-			<input id="input4da" class="ano" type="number"  maxlength="4" placeholder="cm" onkeyup="PressEnter('input5da');"></input></p>
+			<input id="input4da" class="ano" type="number"  maxlength="4" placeholder="cm" onkeyup="PressEnter('input5da');"></input><span class="exclamation" id="exclamationAL"> !</span></p>
 						
 			<p id="pri"><label for="input5da"><b>Fator Atividade</b></label></br>
-			<input id="input5da" class="ano" type="number"  maxlength="4" placeholder="1.3" onkeyup="PressEnter('input8da');"></input></p>
+			<input id="input5da" class="ano" type="number"  maxlength="4" placeholder="1.3" onkeyup="PressEnter('input8da');"></input><span class="exclamation" id="exclamationFA"> !</span></p>
 			
 			<p id="pri"><label for="input8da"><b>Fator Injúria</b></label></br>
-			<input id="input8da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" onkeyup="PressEnter('input6da');"></input></p>
+			<input id="input8da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" onkeyup="PressEnter('input6da');"></input><span class="exclamation" id="exclamationFI"> !</span></p>
 			
 			<p id="pri"><label for="input6da"><b>Fator Térmico</b></label></br>
-			<input id="input6da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" ></input></p>
+			<input id="input6da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" ></input><span class="exclamation" id="exclamationFT"> !</span></p>
 			
 			</fieldset>
 							
@@ -772,6 +776,40 @@ window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos
 	}
 	</script>
 	
+	<script>
+	function exclamation(){ //Acender exclamação
+		let inputIdade = document.getElementById('input1da');
+		let inputPeso = document.getElementById('input3da');
+		let inputAltura = document.getElementById('input4da');
+		let inputFA = document.getElementById('input5da');
+		let inputFI = document.getElementById('input8da');
+		let inputFT = document.getElementById('input6da');
+				
+		//ATRIBUIÇÃO DE VALOR
+		inputIdade = inputIdade.value; 
+		inputPeso = inputPeso.value; 
+		inputAltura = inputAltura.value;
+		inputFA = inputFA.value; 
+		inputFI = inputFI.value;
+		inputFT = inputFT.value;
+		
+	var exclamationID = document.getElementById('exclamationID');
+	var exclamationPE = document.getElementById('exclamationPE');
+	var exclamationAL = document.getElementById('exclamationAL');
+	var exclamationFA = document.getElementById('exclamationFA');
+	var exclamationFI = document.getElementById('exclamationFI');
+	var exclamationFT = document.getElementById('exclamationFT');
+	
+	if(inputIdade<18&&inputIdade>0){exclamationID.style.color='#ff0000';}else{exclamationID.style.color='#f7f7f7';}
+	if(inputPeso<0){exclamationPE.style.color='#ff0000';}else{exclamationPE.style.color='#f7f7f7';}
+	if(inputAltura<2&&inputAltura>0){exclamationAL.style.color='#ff0000';}else{exclamationAL.style.color='#f7f7f7';}
+	if(inputFA<1){exclamationFA.style.color='#ff0000';}else{exclamationFA.style.color='#f7f7f7';}
+	if(inputFI<1){exclamationFI.style.color='#ff0000';}else{exclamationFI.style.color='#f7f7f7';}
+	if(inputFT<1){exclamationFT.style.color='#ff0000';}else{exclamationFT.style.color='#f7f7f7';}
+	
+	}
+	</script>
+	
 	<script type="text/javascript">
 
 	function PressEnter(nextinputId){
@@ -807,10 +845,11 @@ window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos
  National Research Council. Recommended dietary allowances. 10. ed. Washington, DC: National Academy Press; 1989. 284p.
  
 
-</span></br></div>
+</span>
 </br></br>
 
-<p id="lastupdated">Última atualização em: 01/02/2022</p>
+<p id="lastupdated">Última atualização em: 05/02/2022</p>
+</br></br>
 </div>
 </div>
 
