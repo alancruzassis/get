@@ -21,10 +21,9 @@
 	body{
 	height:100%;
 	}
-	
-	body{
-	
-	}
+	textarea:focus, input:focus{
+      outline: none;
+    }
 		
 		h1 {
 			display: block;
@@ -34,8 +33,6 @@
 			position: absolute;
 			left: 172px;
 			top: 35px;
-			padding: ;
-			margin-top: ;
 			letter-spacing: 1px;
 			font-weight: bold;
 			width: 800px;
@@ -90,7 +87,12 @@
 		}
 			
 				
-		
+		.flex-sex{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+    		align-items: center;
+		}
 		
 			
 		
@@ -197,18 +199,9 @@
 		}
 		
 		a{
-		text-decoration: none;
-		font-size: 16px;
-		color:  #01963D;
-		background-color: white;
-		padding: 19px 27px;
-		border-style: solid;
-		border-width: 2px;
-		border-color: #01963D;
-		border-radius: 29px;
-		margin-right: 15px;
+		
 		cursor: pointer;
-		box-shadow: 0.5px 0.5px 0.5px 0.5px violet;
+		
 		}
 		
 		
@@ -224,13 +217,13 @@
 	margin-left: 0px;
 	margin-right: 0px;
 	height: 150px;
-	min-height:149px;
+	min-height:139px;
 	display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		margin-top: 0px;
 		margin-bottom: 5px;
-		box-shadow: 0px 3px 2px #888888;
+		box-shadow: 0px 1px 3px #888888;
 	}
 	
 	.flex-box {
@@ -271,17 +264,15 @@
 	}
 	
 	textarea#textarea{
-		
-		
-		line-height:0.5;
+		line-height: 2.5;
 		width: 90%;
 		height: 90%;
 		font: normal 20pt Arial;
 		color: #166D00;
 		border-radius: 5px;
-		line-height: 1.2em;
 		text-shadow: 0.5px 0.5px 0.5px black;
 		padding-left: 25px;
+		padding-top: 25px;
 		}
 		
 		input#caixai{
@@ -304,7 +295,7 @@
 		height: 750px;
 		padding: 5px;
 		box-sizing: border-box;
-		margin: 0px:
+		margin: 0px;
 		border-radius: 25px;
 		top:0px;
 		
@@ -369,7 +360,6 @@
 		width: 80%;
 		font-size: 0.8em;
 		font-style: italic;
-		left: 4%;
 		opacity: 50%
 		}
 		
@@ -389,14 +379,20 @@
 		
 		
 		input:placeholder-shown {
-		border-color: #f1f1f1;
-		border: inset;
+		border: 2px solid #f1f1f1;
 		}
 		
 		input:not(:placeholder-shown) {
-		border-color: green;
+		border: 2px solid #f1f1f1;
+		}
+
+		.male input:not(:placeholder-shown) {
+		border-color: #f1f1f1;
 		}
 		
+		.female input:not(:placeholder-shown) {
+		border-color: #f1f1f1;
+		}
 		
 				
 		input.dia{
@@ -525,112 +521,92 @@
 		flex-grow:1;
 		}
 		
-		.form-check-input:checked{
-		background-color: #01963D;
-		border-color: #01963D;
+		.male .form-check-input:checked{
+		background-color: #89cff0;
+		border-color: #89cff0;
 		}
 		
+		.female .form-check-input:checked{
+		background-color: pink;
+		border-color: pink;
+		}
+
 		.form-select-lg{
 		padding-right: 1.0rem;
 		font-size: 1.2rem;
 		}
 		
-		
-		
-		<!--media-->
-		@media (min-width: 600px){
-		
-		body{background-color:black;}
-		
-		#flexform{
-		height: 500px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		.termos{
+			display: block;
+			width: fit-content;
+			text-decoration: underline;
+			margin-left: 4%;
+			margin-bottom: 40px;
+			color: gray;
+			font-size: 13px;
+			font-family: Arial, Helvetica, sans-serif;
 		}
 		
-		.form{
-		display: flex;
-		align-items: center;
-		flex-wrap: nowrap;
-		}
 		
-		fieldset{
-		padding: 10px;
-		max-width: 400px;
-		min-width: 312px;
-		color:166D00;
-		}
-		
-		#fCalculo{
-		margin-top: 0px;
-		padding: 0px;
-		}
-		
-			
-		} <!--/media-->
-		
-		
-	</style>
+</style>
 	
 	
 	
 </head>
 <body class="site">
 
-<script>
-window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos fins QUE leu e concorda com os TERMOS E CONDIÇÕES DE USO (disponíveis em alancruzassis.wixsite.com/neodate), QUE atende aos pré-requisitos neles dispostos, QUE cumprirá os termos neles acordados e QUE aceita os cookies deste site. Caso você não concorde (ou não puder cumprir) com os acordos você deve sair da página e não poderá ter acesso ao conteúdo.")
-</script>
+
 <div class="cabecalho">
-<div>
-	<hgroup>
 	<div>
-	<h1 id="h1">GASTO ENERGÉTICO</h1> 
+		<hgroup>
+			<div>
+				<h1 id="h1">GASTO ENERGÉTICO</h1> 
+			</div>
+			<div>
+				<h2>GEB e GET de Adultos e Idosos não críticos</h2>
+			</div>
+		</hgroup>
+		<img src="get.png" alt="Logotipo" width="120px">
 	</div>
-	<div>
-	<h2>GEB e GET de Pacientes Adultos e Idosos não críticos</h2>
-	</div>
-	</hgroup>
-	<img src="get.png"
-	alt="Logotipo"
-	width="120px">
-</div>
 </div>	
 <div class="site-content">
 <div class="bg2">
 <div class="flex-box container-box" id="flexform">
 <div class="form">
 
-		<form method="get" id="fCalculo" action="none" oninput="resultado()" onclick="exclamation()" onchange="exclamation()" oninput="exclamation()" onchange="resultado()" onclick="resultado()">
+		<form method="get" id="fCalculo" action="none" oninput="resultado()" onchange="resultado()" onclick="resultado()">
 			
 			<fieldset ><legend ><strong></strong></legend>
 			<p id="pri"><label for="input1da"><b>Idade</b></label>
-			<input class="ano" id="input1da" type="number"  maxlength="4" max="300" placeholder="Anos" onkeyup="PressEnter('flexSwitchCheckDefault');"></input> <span class="exclamation" id="exclamationID"> !</span>
+			<input class="ano" id="input1da" type="number"  maxlength="4" max="300" placeholder="Anos" onkeyup="PressEnter('flexSwitchCheckDefault');" oninput="redBorderAge()"></input>
 			
-			<p id="pri"><label><b>Sexo</b></label>
-			<div class="form-check form-switch">
-			  <input name="sexo" class="form-check-input" type="radio" value="0" id="flexSwitchCheckDefault" onkeyup="PressEnter('flexSwitchCheckDefault2');">
-			  <label class="form-check-label" for="flexSwitchCheckDefault">Feminino</label>
+			<div class="flex-sex">
+				<div>
+					<p id="pri" style="display: block important!;"><label><b>Sexo&nbsp;&nbsp;</b></label>
+				</div><div class="form-check form-switch female">
+					<input name="sexo" class="form-check-input" type="radio" value="0" id="flexSwitchCheckDefault" onkeyup="PressEnter('flexSwitchCheckDefault2');">
+					<label class="form-check-label female" for="flexSwitchCheckDefault">F&nbsp;&nbsp;&nbsp;</label>
+				</div>
+				<div class="form-check form-switch male">
+					<input name="sexo" class="form-check-input" type="radio" value="1" id="flexSwitchCheckDefault2" onkeyup="PressEnter('input3da');">
+					<label class="form-check-label male" for="flexSwitchCheckDefault2">M</label>
+				</div>
+				</p>						
 			</div>
-			<div class="form-check form-switch">
-			  <input name="sexo" class="form-check-input" type="radio" value="1" id="flexSwitchCheckDefault2" onkeyup="PressEnter('input3da');">
-			  <label class="form-check-label" for="flexSwitchCheckDefault2">Masculino</label>
-			</div>			
-			
 			<p id="pri"><label for="input3da"><b>Peso</b></label>
-			<input id="input3da" class="ano" type="number"  maxlength="4" placeholder="kg" onkeyup="PressEnter('input4da');"></input><span class="exclamation" id="exclamationPE"> !</span></p>
+			<input id="input3da" class="ano" type="number"  maxlength="4" placeholder="kg" onkeyup="PressEnter('input4da');" oninput="redBorderWeight()"></input></p>
 			
 			<p id="pri"><label for="input4da"><b>Altura</b></label>
-			<input id="input4da" class="ano" type="number"  maxlength="4" placeholder="cm" onkeyup="PressEnter('input5da');"></input><span class="exclamation" id="exclamationAL"> !</span></p>
+			<input id="input4da" class="ano" type="number"  maxlength="4" placeholder="cm" onkeyup="PressEnter('input5da');" oninput="redBorderHeight()"></input></p>
 						
 			<p id="pri"><label for="input5da"><b>Fator Atividade</b></label></br>
-			<input id="input5da" class="ano" type="number"  maxlength="4" placeholder="1.3" onkeyup="PressEnter('input8da');"></input><span class="exclamation" id="exclamationFA"> !</span></p>
+			<input id="input5da" class="ano" type="number"  maxlength="4" placeholder="1.3" onkeyup="PressEnter('input8da');" oninput="redBorderFA()"></input></p>
 			
 			<p id="pri"><label for="input8da"><b>Fator Injúria</b></label></br>
-			<input id="input8da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" onkeyup="PressEnter('input6da');"></input><span class="exclamation" id="exclamationFI"> !</span></p>
+			<input id="input8da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" onkeyup="PressEnter('input6da');" oninput="redBorderFI()"></input></p>
 			
 			<p id="pri"><label for="input6da"><b>Fator Térmico</b></label></br>
-			<input id="input6da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" ></input><span class="exclamation" id="exclamationFT"> !</span></p>
+			<input id="input6da" class="ano" type="number"  maxlength="4" Value="1" placeholder="1" oninput="redBorderFT()"></input></p>
 			
 			</fieldset>
 							
@@ -811,40 +787,74 @@ window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos
 	}
 	</script>
 	
+	
+
 	<script>
-	function exclamation(){ //Acender exclamação
-		let inputIdade = document.getElementById('input1da');
-		let inputPeso = document.getElementById('input3da');
-		let inputAltura = document.getElementById('input4da');
-		let inputFA = document.getElementById('input5da');
-		let inputFI = document.getElementById('input8da');
+		function redBorderAge(){ //borda vermelha idade
+			let inputIdade = document.getElementById('input1da');
+							
+			//ATRIBUIÇÃO DE VALOR
+			inputIdade = inputIdade.value; 
+				
+		if(inputIdade<18){document.getElementById('input1da').style.borderColor='#ff0000';}else{document.getElementById('input1da').style.borderColor='#f7f7f7';}
+
+		}
+	</script>
+	<script>
+		function redBorderWeight(){ //borda vermelha peso
+			let inputPeso = document.getElementById('input3da');
+								
+			//ATRIBUIÇÃO DE VALOR
+			inputPeso = inputPeso.value; 
+					
+		if(inputPeso<15||inputPeso>500){document.getElementById('input3da').style.borderColor='#ff0000';}else{document.getElementById('input3da').style.borderColor='#f7f7f7';}
+		}
+	</script>
+	<script>
+		function redBorderHeight(){ //borda vermelha
+			let inputAltura = document.getElementById('input4da');
+								
+			//ATRIBUIÇÃO DE VALOR
+			inputAltura = inputAltura.value;
+					
+		if(inputAltura<50){document.getElementById('input4da').style.borderColor='#ff0000';}else{document.getElementById('input4da').style.borderColor='#f7f7f7';}
+		}
+	</script>
+	
+	<script>
+		function redBorderFA(){ //borda vermelha FA
+			let inputFA = document.getElementById('input5da');
+				
+			//ATRIBUIÇÃO DE VALOR
+			inputFA = inputFA.value; 
+			
+		if(inputFA<1){document.getElementById('input5da').style.borderColor='#ff0000';}else{document.getElementById('input5da').style.borderColor='#f7f7f7';}
+		}
+	</script>
+
+	<script>
+		function redBorderFI(){ //borda vermelha FI
+			let inputFI = document.getElementById('input8da');
+					
+			//ATRIBUIÇÃO DE VALOR
+			inputFI = inputFI.value;
+			if(inputFI<1){document.getElementById('input8da').style.borderColor='#ff0000';}else{document.getElementById('input8da').style.borderColor='#f7f7f7';}
+	
+		}
+	</script>
+
+<script>
+	function redBorderFT(){ //borda vermelha FT
 		let inputFT = document.getElementById('input6da');
 				
 		//ATRIBUIÇÃO DE VALOR
-		inputIdade = inputIdade.value; 
-		inputPeso = inputPeso.value; 
-		inputAltura = inputAltura.value;
-		inputFA = inputFA.value; 
-		inputFI = inputFI.value;
 		inputFT = inputFT.value;
+	
+		if(inputFT<1){document.getElementById('input6da').style.borderColor='#ff0000';}else{document.getElementById('input6da').style.borderColor='#f7f7f7';}
 		
-	var exclamationID = document.getElementById('exclamationID');
-	var exclamationPE = document.getElementById('exclamationPE');
-	var exclamationAL = document.getElementById('exclamationAL');
-	var exclamationFA = document.getElementById('exclamationFA');
-	var exclamationFI = document.getElementById('exclamationFI');
-	var exclamationFT = document.getElementById('exclamationFT');
-	
-	if(inputIdade<18&&inputIdade>0){exclamationID.style.color='#ff0000';}else{exclamationID.style.color='#f7f7f7';}
-	if(inputPeso<0){exclamationPE.style.color='#ff0000';}else{exclamationPE.style.color='#f7f7f7';}
-	if(inputAltura<2&&inputAltura>0){exclamationAL.style.color='#ff0000';}else{exclamationAL.style.color='#f7f7f7';}
-	if(inputFA<1){exclamationFA.style.color='#ff0000';}else{exclamationFA.style.color='#f7f7f7';}
-	if(inputFI<1){exclamationFI.style.color='#ff0000';}else{exclamationFI.style.color='#f7f7f7';}
-	if(inputFT<1){exclamationFT.style.color='#ff0000';}else{exclamationFT.style.color='#f7f7f7';}
-	
-	}
+		}
 	</script>
-	
+
 	<script type="text/javascript">
 
 	function PressEnter(nextinputId){
@@ -861,7 +871,7 @@ window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos
 <embed id="iframepdf" src="https://alancruzassis.github.io/get/tabelasFatores.pdf" type="application/pdf" width="100%" height="600px">
 </br>
 </br>
-<p id="links">Problemas para visualizar? Abra o arquivo numa nova página: <span></br></br><a href="https://drive.google.com/file/d/1MXZj-PU5y6O-lZLt-WWa4-BCNMnQ7LUd/view?usp=sharing" target="_blank">Tabelas FA, FI, FT</a></span><span >	
+<p id="links">Problemas para visualizar? <span><a href="https://drive.google.com/file/d/1MXZj-PU5y6O-lZLt-WWa4-BCNMnQ7LUd/view?usp=sharing" target="_blank" style="text-decoration: underline; color:#01963D">clique aqui</a></span><span >	
 </span>
 </div>
 </br>
@@ -887,11 +897,12 @@ window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos
 </span>
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
-<p id="lastupdated">Última atualização em: 05/02/2022</p>
+<p id="lastupdated">Última atualização em: 31/01/2022</p>
 </br></br>
 </div>
 </div>
-
+</div>
+<a class="termos" href="https://alancruzassis.github.io/neodate/termos.pdf">Termos</a>
 <footer>
 	<div>
 	© Copyright 2022 - Todos os direitos reservados.
@@ -899,7 +910,7 @@ window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos
 </footer>
 	
   
-</div>		
+		
 
 			
 	
